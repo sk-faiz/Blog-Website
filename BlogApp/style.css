@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    flex-flow: column;
+    justify-content: space-evenly;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.body-img header, .new-post-page header {
+    background-image: url(https://media.cntraveler.com/photos/5de82878d606100008e7414f/master/pass/The-Milky-Way_GettyImages-147851475.jpg);
+}
+
+header * {
+   z-index: 1;
+}
+ 
+header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.profile_name, .title, .subtext {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.about {
+    font-size: 20px;
+    word-spacing: 4px;
+    color: #fff;
+}
+
+.profile_img {
+   background-color: aliceblue;
+   height: 150px;
+   width: 150px;
+   border-radius: 50%;
+   background-image: url(./images/Screenshot_169.png);
+   background-size: cover;
+}
+
+.main {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.main_content {
+    min-width: 750px;
+    max-width: 600px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+footer {
+    min-height: 100px;
+    background-color: #eaecee70;
+    color: #929eaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.post {
+    display: flex;
+    border: 2px solid #eaecee;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all .25s ease;
+    cursor: pointer;
+    margin-top: 24px;
+}
+
+.post:hover {
+    box-shadow: 0 2rem 5rem rgba(0,0,0,.1);
+    transform: translate3d(0, -10px, 0);
+}
+.post_img {
+    flex-basis: 40%;
+    background-size: cover;
+    background-position: center;
+}
+
+.post_content {
+    flex-basis: 60%;
+    padding: 24px;
+}
+
+.post_date {
+    font-size: 12px;
+    color: #adb5bd;
+    font-weight: 600;
+}
+
+.post_title {
+    margin-top: 16px;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.post_title h4 {
+    margin: 0;
+}
+
+.post_text {
+    margin-top: 6px;
+    color: #495057;
+    font-weight: 400;
+    line-height: 1.4rem;
+    max-height: 65px;
+    overflow: hidden;
+}
+
+.nav-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 2.5rem;
+    background-color: #004186;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 800;
+    box-shadow: 0 2rem 5rem rgba(0,0,0,.2);
+    transition: all 0.25s ease;
+}
+
+.nav-button:hover {
+    background-color:#002349;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #004186;
+    border: 2px solid #004186;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+.navigation {
+    margin-top: 20px;
+    margin-left: 80px;
+    position: fixed;
+}
+
+.navigation a:hover {
+    color: #fff;
+    background-color: #004186;
+}
+
+.blog-cont a {
+    text-decoration: none;
+}

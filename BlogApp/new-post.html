@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="post.css">
+    <link rel="stylesheet" href="new-post.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container new-post-page">
+       
+           <header class="post-img">
+            <div class="title">New Post</div>
+            <div class="subtext">
+                Let's add a new blog post!
+            </div>
+        </header>
+        <div class="navigation">
+            <a href="index.html">Back</a>
+        </div>
+        <div class="posi">
+         <div class="main-container">
+            
+            <div class="form-container">
+                <form>
+                    <input id="form-post-title" type="text" name="post-title" placeholder="Title" autocomplete="off">
+                    <hr>
+                    <textarea name="post-content" id="form-post-content" placeholder="Content" cols="45" rows="15"></textarea>
+                    <hr>
+                    <div>
+                        <label >Choose Image:</label>
+                        <input type="file" id="post-image" name="post-image" accept="image/*">
+                    </div>
+                    <hr>
+                    <button id="form-post-submit" type="button" onclick="submitNewPost()">Post</button>
+                </form>
+            </div>
+        </div>
+       </div> 
+    
+    </div>
+    <footer>
+        <p>Made by faiz</p>
+      </footer>
+  <script src="new-post.js"></script>  
+</body>
+</html>
